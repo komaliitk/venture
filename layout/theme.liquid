@@ -93,170 +93,168 @@
 <!--   custom style -->
      <style>
        
-       <style>
-       
        .personalize_body {
-       position: fixed;
-       display: none;
-       width: 90%;
-       height: 80%;
-       left: 5%;
-       top: 10%;
-       right: 5%;
-       bottom: 10%;
-       background-color: white;
-       overflow: auto;
-       box-shadow: 0px 0px 15px black;
-       z-index: 999;
+            position: fixed;
+            display: none;
+            width: 90%;
+            height: 80%;
+            left: 5%;
+            top: 10%;
+            right: 5%;
+            bottom: 10%;
+            background-color: white;
+            overflow: auto;
+            box-shadow: 0px 0px 15px black;
+            z-index: 999;
 
 
 
-   }
+        }
 
-   .personalize_content {
-       display: flex;
-       width: 100%;
-       height: 100%;
-       background-color: white;
-       position: absolute;
-       flex-direction: row;
-       align-content: stretch;
-   }
+        .personalize_content {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            flex-direction: row;
+            align-content: stretch;
+        }
 
-   .per_block_left {
-       background-color: #f4f4f4;
-       width: 50%;
-       display: flex;
-       justify-content: center;
-   }
+        .per_block_left {
+            background-color: #f4f4f4;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
 
-   .per_block_right {
-       background-color: white;
-       width: 50%;
-       display: flex;
-       flex-direction: column;
-   }
+        .per_block_right {
+            background-color: white;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
 
-   .right_row {
-       background-color: white;
-       /* flex-grow: 1; */
-       width: 100%;
-   }
+        .right_row {
+            background-color: white;
+            /* flex-grow: 1; */
+            width: 100%;
+        }
 
-   .per_close {
-       display: flex;
-       justify-content: flex-end;
-       background-color: white;
-   }
+        .per_close {
+            display: flex;
+            justify-content: flex-end;
+            background-color: white;
+        }
 
-   .close_img {
-       width: 8%;
-       height: auto;
-       background-color: white;
-   }
+        .close_img {
+            width: 8%;
+            height: auto;
+            background-color: white;
+        }
 
-   .per_title {
-       display: flex;
-       justify-content: flex-start;
-       margin-left: 10%;
-       margin-right: 10%;
-       background-color: white;
-   }
+        .per_title {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: white;
+        }
 
-   .per_edit_text {
-       width: 80%;
-       font-size: large;
-       padding: 12px 12px;
-       /* margin: 8px 0; */
-       margin-left: 10%;
-       margin-right: 10%;
-       display: inline-block;
-       border: 1px solid #ccc;
-       border-radius: 4px;
-       box-sizing: border-box;
-   }
+        .per_edit_text {
+            width: 80%;
+            font-size: large;
+            padding: 12px 12px;
+            /* margin: 8px 0; */
+            margin-left: 10%;
+            margin-right: 10%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
-   .per_title_add_emoji {
-       margin-left: 10%;
-       margin-right: 10%;
-   }
+        .per_title_add_emoji {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
 
-   .per_emoji_block {
-       margin-left: 10%;
-       margin-right: 10%;
-       padding-left: 10%;
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-       overflow-x: scroll;
-   }
+        .per_emoji_block {
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-left: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            overflow-x: scroll;
+        }
 
-   .per_button_save {
-       width: 80%;
-       margin-top: 10%;
-       font-size: large;
-       padding: 20px 12px;
-       /* margin: 8px 0; */
-       margin-left: 10%;
-       margin-right: 10%;
-       display: inline-block;
-       border: 1px solid #ccc;
-       border-radius: 4px;
-       box-sizing: border-box;
-       background-color: black;
-       color: white;
-   }
+        .per_button_save {
+            width: 80%;
+            margin-top: 10%;
+            font-size: large;
+            padding: 20px 12px;
+            /* margin: 8px 0; */
+            margin-left: 10%;
+            margin-right: 10%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
 
-   .per_emoji_image {
-       width: 10%;
-       height: auto;
-   }
+        .per_emoji_image {
+            width: 10%;
+            height: auto;
+        }
 
-   .per_button_save:hover {
-       background-color: grey;
-   }
+        .per_button_save:hover {
+            background-color: grey;
+        }
 
-   /* .per_featured_img {
-       width: 50%;
-       margin: 25%;
-   } */
+        /* .per_featured_img {
+            width: 50%;
+            margin: 25%;
+        } */
 
-   .touter {
-       padding: 1rem;
-       width: 100%;
-       border: 1px solid black;
-   }
+        .touter {
+            padding: 1rem;
+            width: 100%;
+            border: 1px solid black;
+        }
 
-   .intext {
-       width: 500px;
-       height: 70px;
-       border: 1px solid #ccc;
+        .intext {
+            width: 500px;
+            height: 70px;
+            border: 1px solid #ccc;
 
-   }
+        }
 
-   #container1 {
-       position: relative;
-       width: 100%;
-       text-align: center;
-       max-width: 600x;
-       min-width: 300px;
-   }
+        #container1 {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            max-width: 600x;
+            min-width: 300px;
+        }
 
-   #image1 {
-       width: 100%;
-       height: 500px;
-       background: blue;
-       color: #fff;
-   }
+        #image1 {
+            width: 100%;
+            height: 500px;
+            background: blue;
+            color: #fff;
+        }
 
-   #image2 {
-       position: absolute;
-       top: 45%;
-       left: 35%;
-       width: 30%;
-       height: 5%;
+        #image2 {
+            position: absolute;
+            top: 45%;
+            left: 35%;
+            width: 30%;
+            height: 5%;
 /*             background: red; */
-   }
+        }
             
         </style>
   
