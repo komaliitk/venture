@@ -93,116 +93,170 @@
 <!--   custom style -->
      <style>
        
-            .personalize_body{
-                position: fixed;
-                display: none;
-                width: 90%;
-                height: 80%;
-                left: 5%;
-                top: 10%;
-                right: 5%;
-                bottom: 10%;
-                background-color: white;
-                overflow: auto;
-                box-shadow: 0px 0px 15px  black;
-              z-index:999;
-            }
-            .personalize_content{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                background-color: white;
-                position: absolute;
-                flex-direction: row;
-                align-content: stretch;
-            }
-            .per_block_left{
-                background-color: #f4f4f4;
-                width: 50%;
-                display: flex;
-                justify-content: center;
-            }
-            .per_block_right{
-                background-color: white;
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-            }
-            .right_row{
-                background-color: white;
-                /* flex-grow: 1; */
-                width: 100%;
-            }
-            .per_close{
-                display: flex;
-                justify-content: flex-end;
-                background-color: white;
-            }
-            .close_img{
-                width: 8%;
-                height: auto;
-                background-color: white;
-            }
+       <style>
+       
+       .personalize_body {
+       position: fixed;
+       display: none;
+       width: 90%;
+       height: 80%;
+       left: 5%;
+       top: 10%;
+       right: 5%;
+       bottom: 10%;
+       background-color: white;
+       overflow: auto;
+       box-shadow: 0px 0px 15px black;
+       z-index: 999;
 
-            .per_title{
-                display: flex;
-                justify-content: flex-start;
-                margin-left: 10%;
-                margin-right: 10%;
-                background-color: white;
-            }
-            .per_edit_text{
-                width: 80%;
-                font-size: large;
-                padding: 20px 12px;
-                /* margin: 8px 0; */
-                margin-left: 10%;
-                margin-right: 10%;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
-            .per_title_add_emoji{
-                margin-left: 10%;
-                margin-right: 10%;
-            }
-            .per_emoji_block{
-                margin-left: 10%;
-                margin-right: 10%;
-                padding-left: 10%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                overflow-x: scroll;
-            }
-            .per_button_save{
-                width: 80%;
-                margin-top: 10%;
-                font-size: large;
-                padding: 20px 12px;
-                /* margin: 8px 0; */
-                margin-left: 10%;
-                margin-right: 10%;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                background-color: black;
-                color: white;
-            }
-            .per_emoji_image{
-                width: 10%;
-                height: auto;
-            }
-            .per_button_save:hover {
-                background-color: grey;
-            }
 
-            .per_featured_img{
-                width: 50%;
-                margin: 25%;
-            }
+
+   }
+
+   .personalize_content {
+       display: flex;
+       width: 100%;
+       height: 100%;
+       background-color: white;
+       position: absolute;
+       flex-direction: row;
+       align-content: stretch;
+   }
+
+   .per_block_left {
+       background-color: #f4f4f4;
+       width: 50%;
+       display: flex;
+       justify-content: center;
+   }
+
+   .per_block_right {
+       background-color: white;
+       width: 50%;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .right_row {
+       background-color: white;
+       /* flex-grow: 1; */
+       width: 100%;
+   }
+
+   .per_close {
+       display: flex;
+       justify-content: flex-end;
+       background-color: white;
+   }
+
+   .close_img {
+       width: 8%;
+       height: auto;
+       background-color: white;
+   }
+
+   .per_title {
+       display: flex;
+       justify-content: flex-start;
+       margin-left: 10%;
+       margin-right: 10%;
+       background-color: white;
+   }
+
+   .per_edit_text {
+       width: 80%;
+       font-size: large;
+       padding: 12px 12px;
+       /* margin: 8px 0; */
+       margin-left: 10%;
+       margin-right: 10%;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+   }
+
+   .per_title_add_emoji {
+       margin-left: 10%;
+       margin-right: 10%;
+   }
+
+   .per_emoji_block {
+       margin-left: 10%;
+       margin-right: 10%;
+       padding-left: 10%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       overflow-x: scroll;
+   }
+
+   .per_button_save {
+       width: 80%;
+       margin-top: 10%;
+       font-size: large;
+       padding: 20px 12px;
+       /* margin: 8px 0; */
+       margin-left: 10%;
+       margin-right: 10%;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+       background-color: black;
+       color: white;
+   }
+
+   .per_emoji_image {
+       width: 10%;
+       height: auto;
+   }
+
+   .per_button_save:hover {
+       background-color: grey;
+   }
+
+   /* .per_featured_img {
+       width: 50%;
+       margin: 25%;
+   } */
+
+   .touter {
+       padding: 1rem;
+       width: 100%;
+       border: 1px solid black;
+   }
+
+   .intext {
+       width: 500px;
+       height: 70px;
+       border: 1px solid #ccc;
+
+   }
+
+   #container1 {
+       position: relative;
+       width: 100%;
+       text-align: center;
+       max-width: 600x;
+       min-width: 300px;
+   }
+
+   #image1 {
+       width: 100%;
+       height: 500px;
+       background: blue;
+       color: #fff;
+   }
+
+   #image2 {
+       position: absolute;
+       top: 45%;
+       left: 35%;
+       width: 30%;
+       height: 5%;
+/*             background: red; */
+   }
             
         </style>
   
@@ -260,17 +314,154 @@
   
 <!--   self script -->
    <script>
-                var mod_box = document.getElementById("personalize_block")
-                var per_button = document.getElementById("personalize_button")
-                var close_button = document.getElementById("close_block")
+      var mod_box = document.getElementById("personalize_block");
+        var per_button = document.getElementById("personalize_button");
+        var close_button = document.getElementById("close_block");
 
-    
-                per_button.onclick = function(){
-                    mod_box.style.display = "block"
-                }
-                close_button.onclick = function(){
-                    mod_box.style.display = "none"
-                }
+        per_button.onclick = function () {
+            mod_box.style.display = "block"
+        }
+        close_button.onclick = function () {
+            mod_box.style.display = "none"
+        }
+
+        function emoji_01() {
+
+            const textimage = document.getElementById('divimage');
+            const ti2 = document.getElementById('divimage2');
+            const ti3 = document.getElementById('divimage3');
+
+
+            textimage.innerHTML = textimage.innerHTML + "<img  width='30' height='25' src='{{ 'emo_01.png' | asset_img_url: '300x' }}' alt=''>";
+            ti2.innerHTML = textimage.innerHTML;
+            ti3.innerHTML = ti2.innerHTML ;
+        }
+
+        function emoji_02() {
+
+            const textimage = document.getElementById('divimage');
+            const ti2 = document.getElementById('divimage2');
+            const ti3 = document.getElementById('divimage3');
+
+
+            textimage.innerHTML = textimage.innerHTML + "<img  width='30' height='25' src='{{ 'emo_02.png' | asset_img_url: '300x' }}' alt=''>";
+            ti2.innerHTML = textimage.innerHTML;
+            ti3.innerHTML = ti2.innerHTML ;
+
+        }
+        function emoji_03() {
+
+            const textimage = document.getElementById('divimage');
+            const ti2 = document.getElementById('divimage2');
+            const ti3 = document.getElementById('divimage3');
+
+
+            textimage.innerHTML = textimage.innerHTML + "<img  width='30' height='25' src='{{ 'emo_03.png' | asset_img_url: '300x' }}' alt=''>";
+            ti2.innerHTML = textimage.innerHTML;
+            ti3.innerHTML = ti2.innerHTML ;
+        }
+        function emoji_04() {
+
+            const textimage = document.getElementById('divimage');
+            const ti2 = document.getElementById('divimage2');
+            const ti3 = document.getElementById('divimage3');
+
+
+            textimage.innerHTML = textimage.innerHTML + "<img  width='30' height='25' src='{{ 'emo_04.png' | asset_img_url: '300x' }}' alt=''>";
+            ti2.innerHTML = textimage.innerHTML;
+            ti3.innerHTML = ti2.innerHTML ;
+
+        }
+        function emoji_05() {
+
+            const textimage = document.getElementById('divimage');
+            const ti2 = document.getElementById('divimage2');
+            const ti3 = document.getElementById('divimage3');
+
+
+            textimage.innerHTML = textimage.innerHTML + "<img  width='30' height='25' src='{{ 'emo_05.png' | asset_img_url: '300x' }}' alt=''>";
+            ti2.innerHTML = textimage.innerHTML;
+            ti3.innerHTML = ti2.innerHTML ;
+
+        }
+        function emoji_06() {
+
+            const textimage = document.getElementById('divimage');
+            const ti2 = document.getElementById('divimage2');
+            const ti3 = document.getElementById('divimage3');
+
+
+            textimage.innerHTML = textimage.innerHTML + "<img  width='30' height='25' src='{{ 'emo_06.png' | asset_img_url: '300x' }}' alt=''>";
+            ti2.innerHTML = textimage.innerHTML;
+            ti3.innerHTML = ti2.innerHTML ;
+
+        }
+        function emoji_07() {
+
+            const textimage = document.getElementById('divimage');
+            const ti2 = document.getElementById('divimage2');
+            const ti3 = document.getElementById('divimage3');
+
+
+            textimage.innerHTML = textimage.innerHTML + "<img  width='30' height='25' src='{{ 'emo_07.png' | asset_img_url: '300x' }}' alt=''>";
+            ti2.innerHTML = textimage.innerHTML;
+            ti3.innerHTML = ti2.innerHTML ;
+        }
+
+
+        function emoji_08() {
+
+            const textimage = document.getElementById('divimage');
+            const ti2 = document.getElementById('divimage2');
+            const ti3 = document.getElementById('divimage3');
+
+
+            textimage.innerHTML = textimage.innerHTML + "<img  width='30' height='25' src='{{ 'emo_08.png' | asset_img_url: '300x' }}' alt=''>";
+            ti2.innerHTML = textimage.innerHTML;
+            ti3.innerHTML = ti2.innerHTML ;
+        }
+
+
+
+
+
+
+
+
+        function writing() {
+
+            document.getElementById('divimage2').innerHTML = document.getElementById('divimage').innerHTML;
+            document.getElementById('divimage3').innerHTML = document.getElementById('divimage').innerHTML;
+
+
+        }
+        function setImg() {
+            var img1 = document.getElementById('image1'),
+                img2 = document.getElementById('image2'),
+                offtop = ((img1.offsetHeight / 2) - (img2.offsetHeight / 2)),
+                offleft = ((img1.offsetWidth / 2) - (img2.offsetWidth / 2));
+            img2.style.top = offtop + "px";
+            img2.style.left = offleft + "px";
+        }
+        function save_edit() {
+            const data = document.getElementById('divimage3').innerHTML;
+            const dataname = 'data-tile';
+            const cookie = document.cookie = "" + dataname + "=" + data + "; expires=Thu, 20 Dec 2022 12:00:00 UTC";
+            alert(cookie);
+            console.log(data);
+            // localStorage.setItem("lastname", "Smith");
+            localStorage.setItem(dataname, data);
+            mod_box.style.display = "none"
+
+        }
+        function load() {
+            const c = localStorage.getItem("data-tile");
+            const a = document.getElementById('divimage3');
+            const b = document.getElementById('check');
+            a.innerHTML = c;
+            b.innerHTML = c;
+        }
+                
             </script>
 </body>
 </html>
