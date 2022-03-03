@@ -540,12 +540,15 @@
         function load() {
             
             const a = document.getElementById('divimage');
+          const b = document.getElementById("divimage2");
 //             const b = document.getElementById('check');
                     let p_n=document.getElementById("p_n").innerHTML;
 
           const c = localStorage.getItem(p_n);
           alert("hello"+p_n+c);
             a.innerHTML = c;
+                      b.innerHTML = c;
+
            
         }
               
