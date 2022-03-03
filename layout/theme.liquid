@@ -526,17 +526,17 @@
             img2.style.top = offtop + "px";
             img2.style.left = offleft + "px";
         }
-        function save_edit() {
-            const data = document.getElementById('divimage3').innerHTML;
-            const dataname = 'data-tile';
-            const cookie = document.cookie = "" + dataname + "=" + data + "; expires=Thu, 20 Dec 2022 12:00:00 UTC";
-            alert(cookie);
-            console.log(data);
-            // localStorage.setItem("lastname", "Smith");
-            localStorage.setItem(dataname, data);
-            mod_box.style.display = "none"
+//         function save_edit() {
+//             const data = document.getElementById('divimage3').innerHTML;
+//             const dataname = 'data-tile';
+//             const cookie = document.cookie = "" + dataname + "=" + data + "; expires=Thu, 20 Dec 2022 12:00:00 UTC";
+//             alert(cookie);
+//             console.log(data);
+//             // localStorage.setItem("lastname", "Smith");
+//             localStorage.setItem(dataname, data);
+//             mod_box.style.display = "none"
 
-        }
+//         }
         function load() {
             const c = localStorage.getItem("data-tile");
             const a = document.getElementById('divimage3');
@@ -553,7 +553,7 @@
       //      console.log(document.cookie);
            alert(x);
          localStorage.setItem(p_n,y);
-
+			mod_box.style.display = "none";
 
            } 
      
