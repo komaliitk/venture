@@ -345,7 +345,7 @@
   
 </head>
 
-<body class="template-{{ request.page_type | handle }}" >
+<body onload="load()" class="template-{{ request.page_type | handle }}" >
 
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">
     {{ 'general.accessibility.skip_to_content' | t }}
@@ -538,11 +538,14 @@
 
 //         }
         function load() {
-            const c = localStorage.getItem("data-tile");
+            
             const a = document.getElementById('divimage3');
-            const b = document.getElementById('check');
+//             const b = document.getElementById('check');
+                    let p_n=document.getElementById("p_n").innerHTML;
+
+          const c = localStorage.getItem(p_n);
             a.innerHTML = c;
-            b.innerHTML = c;
+           
         }
               
      
